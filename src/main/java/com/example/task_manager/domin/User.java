@@ -40,7 +40,7 @@ public class User implements UserDetails {
     private Boolean locked = false;
     private Boolean enabled = true;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "task")
+    @OneToMany(fetch = FetchType.LAZY)
     private List<Task> tasks;
 
     public User(String username,
